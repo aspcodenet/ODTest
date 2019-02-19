@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace BowlinghallBengan.Bowling
 {
     //SINGELTON PATTERN
-    class BowlingAlley
+    public class BowlingAlley
     {
         private static BowlingAlley _instance = null;
         public string Name { get; set; }

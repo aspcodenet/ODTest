@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BowlinghallBengan.Bowling
 {
-    enum FeeType
+    public enum FeeType
     {
         //Lägger bara in alla olika typer av feeTypes det finns
         StartFee,

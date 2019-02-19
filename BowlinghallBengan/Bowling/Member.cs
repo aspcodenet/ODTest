@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BowlinghallBengan.Bowling
 {
-    class Member : Person
+    public class Member : Person
     {
         public int Id { get; set; }
         public string StreetAddress { get; set; }

@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Bowling\BowlingAlley.cs" />
+    <Compile Include="Bowling\ChampionOfTheYearCalculator.cs" />
     <Compile Include="Bowling\Cup.cs" />
     <Compile Include="Bowling\CupFactory.cs" />
     <Compile Include="Bowling\CurrentFee.cs" />
@@ -52,6 +53,7 @@
     <Compile Include="Bowling\FeeType.cs" />
     <Compile Include="Bowling\Game.cs" />
     <Compile Include="Bowling\GameSerie.cs" />
+    <Compile Include="Bowling\ICupWinnerCalculator.cs" />
     <Compile Include="Bowling\Logger.cs" />
     <Compile Include="Bowling\Member.cs" />
     <Compile Include="Bowling\Membership.cs" />

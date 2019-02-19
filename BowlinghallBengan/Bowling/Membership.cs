@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BowlinghallBengan.Bowling
 {
-    class Membership
+    public class Membership
     {
         public int MemberNo { get; set; }
         public DateTime StartDate { get; set; }

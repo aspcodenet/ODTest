@@ -6,19 +6,25 @@ using System.Threading.Tasks;
 
 namespace BowlinghallBengan.Bowling
 {
-    class Cup
+    public class Cup
     {
         public string Name { get; set; }
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
         public List<Game> PlayedGames { get; set; }
         public List<Parcipitant> Parcipitants { get; set; }
+        public ICupWinnerCalculator CupWinnerCalculator { get; set; }
 
         public Cup(string name, DateTime startDate, DateTime endDate)
         {
             Name = name;
             PlayedGames = new List<Game>();
             Parcipitants = new List<Parcipitant>();
+        }
+
+        public Member GetWinnerOfCup()
+        {
+            return CupWinnerCalculator.GetWinner(PlayedGames);
         }
 
         public void RegisterNewParticipant(Member currentMember)

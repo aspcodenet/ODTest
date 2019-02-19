@@ -17,7 +17,7 @@ namespace BowlinghallBengan
 
                 if (currentVisitor.WantsMembership)
                 {
-                    Member newMember = currentVisitor.BecomeMember(currentVisitor);
+                    Member newMember = currentVisitor.BecomeMember();
                     BowlingAlley.Instance.Confirmation(newMember.Name);
                 }
             }
@@ -33,6 +33,16 @@ namespace BowlinghallBengan
                 testCup.RegisterNewParticipant(currentMember);
                 Console.WriteLine();
             }
+
+            Game game = new Game();
+            game.Player1 = bowlingAlley.AllMembers[0];
+            game.Player2 = bowlingAlley.AllMembers[1];
+
+            game.GameSeries.Add(new GameSerie(120, 100));
+            game.GameSeries.Add(new GameSerie(110, 90));
+            game.GameSeries.Add(new GameSerie(95, 100));
+
+            game.GetWinnerOfGame();
 
             Console.ReadLine();
         }

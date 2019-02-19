@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BowlinghallBengan.Bowling
 {
-    class Visitor : Person
+    public class Visitor : Person
     {
         public string StreetAddress { get; set; }
         public bool WantsMembership { get; set; }
@@ -17,13 +17,13 @@ namespace BowlinghallBengan.Bowling
             StreetAddress = streetAddress;
         }
 
-        public Member BecomeMember(Visitor currentVisitor)
+        public Member BecomeMember()
         {
             bool hasPayedStartFee = false;
             int memberNo = 1;
             DateTime startDateMembership = DateTime.Today;
-            string name = currentVisitor.Name;
-            string streetAddress = currentVisitor.StreetAddress;
+            string name = Name;
+            string streetAddress = StreetAddress;
 
             Membership newMembership = new Membership(memberNo, startDateMembership);
             Member newMember = new Member(name, streetAddress, newMembership);

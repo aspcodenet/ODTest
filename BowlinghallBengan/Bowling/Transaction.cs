@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BowlinghallBengan.Bowling
 {
-    class Transaction
+    public class Transaction
     {
         public decimal Amount { get; set; }
         public bool IsPayed { get; set; }

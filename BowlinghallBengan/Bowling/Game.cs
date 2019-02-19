@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BowlinghallBengan.Bowling
 {
-    class Game
+    public class Game
     {
         public Game()
         {
@@ -17,6 +17,28 @@ namespace BowlinghallBengan.Bowling
         public Member Player1 { get; set; }
         public Member Player2 { get; set; }
         public List<GameSerie> GameSeries { get; set; }
+
+        public Member GetWinnerOfGame()
+        {
+            var sumPlayer1 = GameSeries.Sum(g => g.ScorePlayer1);
+            var sumPlayer2 = GameSeries.Sum(g => g.ScorePlayer2);
+
+            if (sumPlayer1 > sumPlayer2)
+            {
+                Console.WriteLine("Winner is " + Player1.Name);
+                return Player1;
+            }
+            else if(sumPlayer2 > sumPlayer1)
+            {
+                Console.WriteLine("Winner is " + Player2.Name);
+                return Player2;
+            }
+            else
+            {
+                Console.WriteLine("No winner");
+                return null;
+            }
+        }
         /*
          METODER:
             - RegisterSerie()
