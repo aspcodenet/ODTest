@@ -1,0 +1,19 @@
+﻿
+1. Skapa ny medlem
+	Som en administratör
+	Vill jag kunna skapa ny medlemmar
+	För att enkelt kunna hantera medlemmar och betalningar
+
+2. Skapa en cup
+	Som en administratör
+	Vill jag kunna skapa en cup
+	För att hantera deltagare, matcher och kunna räkna ut vinnaren
+
+3. Registrera spelresultat 
+	Som en medlem
+	Vill jag kunna registrera serieresultat i en match
+	För att systemet ska ränka ut vem som vunnit matchen
+
+
+
+

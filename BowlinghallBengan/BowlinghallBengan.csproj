@@ -70,5 +70,12 @@
   <ItemGroup>
     <Folder Include="Integration\" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Diagrams\Class Diagrams\Class Diagram.PNG" />
+    <Content Include="Diagrams\Sequens diagrams\SequensDiagram.PNG" />
+    <Content Include="Diagrams\Use Cases\Use Case Diagram.PNG" />
+    <Content Include="Diagrams\Use Cases\UseCases.txt" />
+    <Content Include="Diagrams\Workflows\Workflow.PNG" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
